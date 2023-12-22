@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Forms</title>
+    </head>
+    <body>
+        <h1>This is a HTML form</h1>
+        <form action="backend.php">
+            <div>
+                Name : <input type="text" name="myName">
+            </div>
+            <br>
+            <div>
+                University : <input type="text" name="myUniversity">
+            </div>
+            <br>
+            <div>
+                Email : <input type="email" name="myEmail">
+            </div>
+            <br>
+            <div>
+                Date : <input type="date" name="myDate">
+            </div>
+            <br>
+            <div>
+                Age : <input type="number" name="myAge">
+            </div>
+            <br>
+            <div>
+                <label for="gender1">Male</label>
+                <input type="radio" name="myGender" id="gender1">
+                <label for="gender2">Female</label>
+                <input type="radio" name="myGender" id="gender2">
+                <label for="gender3">Other</label>
+                <input type="radio" name="myGender" id="gender3">
+            </div>
+            <br>
+            <div>
+                <label for="eligible">Eligiblity</label>
+                <input type="checkbox" name="myEligiblity" id="eligible">
+            </div>
+            <br>
+            <div>
+                <label for="phase">Study level</label>
+                <select name="studyLevel" id="phase">
+                    <option value="ugrad">Undergraduate</option>
+                    <option value="pgrad">Postgraduate</option>
+                    <option value="fgrad" selected>Faculty</option>
+                </select>
+            </div>
+            <br>
+            <div>
+                Write about yourself : <br><textarea name="myText" cols="60" rows="5"></textarea>
+            </div>
+            <br>
+            <div>
+                <input type="submit" value="Submit">
+                <input type="reset" value="Reset">
+            </div>
+        </form>
+    </body>
+</html>
